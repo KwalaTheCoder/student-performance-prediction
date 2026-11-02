@@ -1,0 +1,10 @@
+{
+  "domain": "student-performance",
+  "task": "regression",
+  "targets": [
+    "Performance Index"
+  ],
+  "exclude": [
+    "Performance Index Cat"
+  ]
+}
