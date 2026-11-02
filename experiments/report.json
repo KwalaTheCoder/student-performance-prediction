@@ -1,0 +1,62 @@
+{
+  "project": "student-performance",
+  "task": "regression",
+  "seed": 42,
+  "folds": 5,
+  "scoring": "neg_mean_absolute_error",
+  "cv_selection_score": -1.6060720505560062,
+  "selected_model": "Ridge",
+  "leaderboard": [
+    {
+      "model": "DummyRegressor",
+      "parameters": {},
+      "cv_score": -16.226928064247723,
+      "cv_std": 0.1672044666577923
+    },
+    {
+      "model": "Ridge",
+      "parameters": {},
+      "cv_score": -1.6060720505560062,
+      "cv_std": 0.04185954693136902
+    },
+    {
+      "model": "RandomForestRegressor",
+      "parameters": {},
+      "cv_score": -1.7888150728604473,
+      "cv_std": 0.0473014297005689
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "parameters": {},
+      "cv_score": -1.8449134854741938,
+      "cv_std": 0.04385411890345427
+    }
+  ],
+  "holdout": {
+    "mae": 1.6679826051020408,
+    "rmse": 2.0844647451524363,
+    "r2": 0.9882464205974513
+  },
+  "train_rows": 7982,
+  "test_rows": 2018,
+  "input_rows": 10000,
+  "missing_target_rows_removed": 0,
+  "missing_predictor_rows_removed": 0,
+  "grouped_split": true,
+  "group_column": null,
+  "features": [
+    "Hours Studied",
+    "Previous Scores",
+    "Extracurricular Activities",
+    "Sleep Hours",
+    "Sample Question Papers Practiced"
+  ],
+  "data_fingerprint": "7ee29d2bf99c6a5f292d600d53f5e2772519017610f0c87f85c1e36d05678959",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "note": "CV scores select the model and are optimistic; holdout metrics are the final evaluation. Negative MAE scores are higher-is-better. Synthetic tests are not real-data benchmarks."
+}

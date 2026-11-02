@@ -1,0 +1,10 @@
+{
+  "project": "student-performance-prediction",
+  "exit_code": 0,
+  "seconds": 18.3,
+  "data_file": "Student/Student_Performance.csv",
+  "data_sha256": "93793b00d9026d0b4907df0ca9f88b3696747c7496679d35833bb0fbf9fb57cf",
+  "tuned": false,
+  "folds": 5,
+  "seed": 42
+}

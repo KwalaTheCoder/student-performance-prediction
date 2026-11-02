@@ -2,6 +2,10 @@
 
 Standalone refactor of **KwalaTheCoder's independently written Student.ipynb**. The original work is preserved in `legacy/`; the modern implementation is AI-assisted. See `PROVENANCE.json` for provenance and source hashes.
 
+## Measured evaluation
+
+See [RESULTS.md](RESULTS.md) for the locked real-data experiment, exact input hash, holdout metrics, CV baseline and limitations.
+
 ## What changed
 
 Supports continuous-score regression by default and four-band classification with --task classification. Removes both Performance Index and Performance Index Cat from all predictors, fixing direct target leakage. Bands are low [0,25], fair (25,50], good (50,75], high (75,100]. Preserves all available legitimate study inputs; model selection never uses the final holdout.
@@ -10,7 +14,7 @@ Supports continuous-score regression by default and four-band classification wit
 
 Student_Performance.csv with Performance Index (0-100), Hours Studied, Previous Scores, Extracurricular Activities, Sleep Hours and Sample Question Papers Practiced.
 
-Data is not included in the source repository. Obtain the original dataset legally and verify its provenance, schema and license. No real-data accuracy claim is made. Missing labels are removed and counted in the report; missing predictors are imputed. Do not add identifiers, post-outcome fields or target-derived columns as predictors. Columns beyond the documented schema require manual leakage review.
+Data is not included in the source repository. Obtain the original dataset legally and verify its provenance, schema and license. Measured results on the supplied dataset are documented in [RESULTS.md](RESULTS.md). Missing labels are removed and counted in the report; missing predictors are imputed. Do not add identifiers, post-outcome fields or target-derived columns as predictors. Columns beyond the documented schema require manual leakage review.
 
 ## Run
 
